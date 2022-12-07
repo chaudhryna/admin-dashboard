@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Kevin Powell reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+/* 
+html {
+    color-scheme: dark light;
+} */
+
+/* Project setup */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1 fr 4fr;
+}
+
+.sidebar {
+    background-color: #2FD0CC;
+    color: #fff;
+    gap: 2em;
+    justify-items: center;
+    padding: 2em;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-bottom: 3em;
+}
+
+.sidebar li {
+    transition: all 0.4s ease;
+}
+
+.sidebar li:hover {
+    cursor: pointer;
+    color: #C0C0C0;
+    opacity:0.6;
+    filter: alpha(opacity=60);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5em;
+}
+
+.logo img {
+    fill: #fff;
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+}
+
+.menu img {
+    width: 3em;
+    height: 3em;
+    fill: #fff;
+    vertical-align: middle;
+    padding-right: 1em;
+}
+
+.main {
+    background-color: #e2e8f0;
+}
+
+.header {
+    grid-column-start: 2;
+    padding: 1em 2em;
+    display: grid;
+    grid-template-columns: 2fr  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+form img {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+}
+
+form input {
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 8px;
+    padding: .4em;
+    width: 25em;
+}
+
+.notification img {
+    width: 2em;
+    height: 2em;
+}
+
+.profile img {
+    border-radius: 50%;
+    background-color: #D02F33;
+    width: 3em;
+    vertical-align: middle;
+}
+
+.profile span {
+    font-size: 1.5rem;
+}
