@@ -9,21 +9,6 @@
 </head>
 <body>
 <div class="container">
-    <div class="header">
-        <form>
-            <img src="images/magnify.svg" alt="search" />
-            <input type="text" name="search" id="search" />
-        </form>
-        <div class="notification">
-            <img src="images/bell-ring-outline.svg" alt="notification">
-        </div>
-        <div class="profile">
-            <img src="images/Maxine.png" alt="profile image">
-            <span>Maxine</span>
-        </div>
-        
-    </div>
-
     <div class="sidebar">
         <div class="logo">
             <h1><img src="images/view-dashboard.svg" alt="Dashboard logo" /> Dashboard</h1>
@@ -52,8 +37,38 @@
             </ul>
         </div>
     </div>
-    <div class="main">
-        <h2>Main cards go here.</h2>
+    <div class="header">
+        <div class="profile">
+            <form>
+                <img src="images/magnify.svg" alt="search" />
+                <input type="text" name="search" id="search" />
+            </form>
+            
+                <img class="bell" src="images/bell-ring-outline.svg" alt="notification">
+            
+                <img class="profile-img-sm" src="images/Maxine.png" alt="profile image">
+                <span>Maxine</span>
+        </div>
+        <div class="greeting">
+            <div>
+                <img src="images/Maxine.png" alt="profile image">
+                <span>Hi there!</span>
+                <span>Maxine (@maxine)</span>
+            </div>
+            
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
+        </div>
+        <div class="main">
+            <div class="projects">
+                <h2>Your Projects</h2>
+            </div>
+            <div class="main__right">
+                <h2>Announcements</h2>
+                <h2>Trending</h2>
+            </div>
+        </div>
     </div>
 </div>
 </body>
